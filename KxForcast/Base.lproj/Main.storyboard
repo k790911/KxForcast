@@ -166,6 +166,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="iIB-hB-bs4"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -188,6 +191,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ra-fd-2wq" secondAttribute="trailing" id="vmw-QQ-ytg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="listTableView" destination="1ra-fd-2wq" id="6mI-WQ-K29"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
