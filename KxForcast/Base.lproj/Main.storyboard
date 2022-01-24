@@ -42,11 +42,11 @@
                                     <constraint firstAttribute="height" constant="60" id="oUZ-4E-v0n"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1ra-fd-2wq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1ra-fd-2wq">
                                 <rect key="frame" x="0.0" y="104" width="414" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="180" id="A0x-x4-LpW">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SummaryTableViewCell" rowHeight="180" id="A0x-x4-LpW" customClass="SummaryTableViewCell" customModule="KxForcast" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A0x-x4-LpW" id="mBq-t8-yCg">
@@ -95,8 +95,14 @@
                                                 <constraint firstItem="rLZ-hI-GAu" firstAttribute="top" secondItem="s9l-YX-UQd" secondAttribute="bottom" constant="10" id="ztJ-be-fqa"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="currentTemperatureLabel" destination="rLZ-hI-GAu" id="Vcz-DU-5Hx"/>
+                                            <outlet property="minMaxLabel" destination="rLZ-hI-GAu" id="KzC-hO-1qn"/>
+                                            <outlet property="status" destination="wiC-b0-uAc" id="r4m-4f-hMQ"/>
+                                            <outlet property="weatherImageView" destination="s9l-YX-UQd" id="35c-as-JYz"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="80" id="MaI-QS-eFV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ForcastTableViewCell" rowHeight="80" id="MaI-QS-eFV" customClass="ForcastTableViewCell" customModule="KxForcast" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="224.5" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MaI-QS-eFV" id="fJm-Ts-ksS">
@@ -151,6 +157,13 @@
                                                 <constraint firstItem="NLN-Eg-Ceu" firstAttribute="top" secondItem="fJm-Ts-ksS" secondAttribute="topMargin" id="vSK-yI-nZ7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="NLN-Eg-Ceu" id="n4t-uc-v1R"/>
+                                            <outlet property="status" destination="sGe-Qy-IbC" id="zro-zy-yFi"/>
+                                            <outlet property="temperature" destination="Ndf-EO-Ntl" id="dPb-EG-5ls"/>
+                                            <outlet property="timeLable" destination="iNI-El-iaN" id="mK1-U7-oTq"/>
+                                            <outlet property="weatherImageView" destination="Kb2-1C-j3o" id="C83-Ii-1zw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

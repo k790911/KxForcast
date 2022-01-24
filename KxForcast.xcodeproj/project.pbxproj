@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D72C334E279ED097007EF796 /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72C334D279ED097007EF796 /* SummaryTableViewCell.swift */; };
+		D72C3350279ED0BC007EF796 /* ForcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72C334F279ED0BC007EF796 /* ForcastTableViewCell.swift */; };
 		D7677C32279C2FB30004D34E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7677C31279C2FB30004D34E /* AppDelegate.swift */; };
 		D7677C34279C2FB30004D34E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7677C33279C2FB30004D34E /* SceneDelegate.swift */; };
 		D7677C36279C2FB30004D34E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7677C35279C2FB30004D34E /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D72C334D279ED097007EF796 /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
+		D72C334F279ED0BC007EF796 /* ForcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastTableViewCell.swift; sourceTree = "<group>"; };
 		D7677C2E279C2FB30004D34E /* KxForcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KxForcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7677C31279C2FB30004D34E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7677C33279C2FB30004D34E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D72C334C279ED054007EF796 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D72C334D279ED097007EF796 /* SummaryTableViewCell.swift */,
+				D72C334F279ED0BC007EF796 /* ForcastTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		D7677C25279C2FB30004D34E = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +71,7 @@
 		D7677C30279C2FB30004D34E /* KxForcast */ = {
 			isa = PBXGroup;
 			children = (
+				D72C334C279ED054007EF796 /* Cell */,
 				D7677C31279C2FB30004D34E /* AppDelegate.swift */,
 				D7677C33279C2FB30004D34E /* SceneDelegate.swift */,
 				D7677C35279C2FB30004D34E /* ViewController.swift */,
@@ -143,7 +157,9 @@
 			files = (
 				D7677C48279C372A0004D34E /* Common.swift in Sources */,
 				D7677C36279C2FB30004D34E /* ViewController.swift in Sources */,
+				D72C3350279ED0BC007EF796 /* ForcastTableViewCell.swift in Sources */,
 				D7677C32279C2FB30004D34E /* AppDelegate.swift in Sources */,
+				D72C334E279ED097007EF796 /* SummaryTableViewCell.swift in Sources */,
 				D7677C34279C2FB30004D34E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
